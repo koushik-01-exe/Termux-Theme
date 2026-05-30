@@ -1,0 +1,15 @@
+format = "$username$hostname$directory$character"
+
+[username]
+show_always = true
+format = "[Kouxik](bold green)@"
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold cyan) "
+
+[directory]
+format = "[$path](bold yellow)"
+
+[character]
+success_symbol = " [❯](bold green)"

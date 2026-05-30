@@ -1,0 +1,5 @@
+alias py="python"
+alias ll="ls -la"
+alias update="pkg update && pkg upgrade -y"
+echo "                ⚡ Welcome to Termux ⚡ "
+eval "$(starship init bash)"
