@@ -50,3 +50,4 @@ If you encounter any issues or have suggestions to improve this theme, feel free
 *   GitHub: [@koushik-01-exe](https://github.com/koushik-01-exe)
 
 > **If you like this setup, please consider giving this repository a ⭐ to show your support!**
+
