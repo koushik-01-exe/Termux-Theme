@@ -4,7 +4,7 @@ set -e
 echo "⚡ Installing Kouxik's Termux Theme..."
 
 pkg update -y
-pkg install git fish starship neofetch curl -y
+pkg install fish starship neofetch curl -y
 
 mkdir -p ~/.config/neofetch ~/.config/fish ~/.termux
 
@@ -18,13 +18,9 @@ curl -sL "$REPO/termux.properties" -o ~/.termux/termux.properties
 curl -sL "$REPO/colors.properties" -o ~/.termux/colors.properties
 curl -sL "$REPO/.bashrc" -o ~/.bashrc
 
-# Fish greeting off
 fish -c "set -U fish_greeting ''"
-
-# Hushlogin
 touch ~/.hushlogin
-
 chsh -s fish
 termux-reload-settings
 
-echo "✅ Done! Restart Termux to enjoy the theme ⚡"
+echo "✅ Done! Restart Termux ⚡"
