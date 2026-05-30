@@ -30,9 +30,10 @@ Transform your default Termux terminal into a sleek, highly customized, and prod
 
 Getting started is incredibly easy. Just copy and paste the following one-liner into your Termux app:
 
-\`\`\`bash
+
+```bash
 curl -sL https://raw.githubusercontent.com/koushik-01-exe/Termux-Theme/main/install.sh | bash
-\`\`\`
+```
 
 ### Next Steps:
 1. Allow the script to run and install the required packages.
