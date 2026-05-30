@@ -13,3 +13,5 @@ format = "[$path](bold yellow)"
 
 [character]
 success_symbol = " [❯](bold green)"
+[nodejs]
+disabled = true
