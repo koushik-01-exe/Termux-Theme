@@ -1,11 +1,11 @@
 #!/bin/bash
 set -e
 
-echo "Installing packages..."
-pkg update -y
-pkg install git fish starship neofetch -y
+echo "⚡ Installing Kouxik's Termux Theme..."
 
-echo "Setting up config files..."
+pkg update -y
+pkg install git fish starship neofetch curl -y
+
 mkdir -p ~/.config/neofetch ~/.config/fish ~/.termux
 
 REPO="https://raw.githubusercontent.com/koushik-01-exe/Termux-Theme/main"
@@ -18,7 +18,13 @@ curl -sL "$REPO/termux.properties" -o ~/.termux/termux.properties
 curl -sL "$REPO/colors.properties" -o ~/.termux/colors.properties
 curl -sL "$REPO/.bashrc" -o ~/.bashrc
 
+# Fish greeting off
+fish -c "set -U fish_greeting ''"
+
+# Hushlogin
+touch ~/.hushlogin
+
 chsh -s fish
 termux-reload-settings
 
-echo "Done! Restart Termux ⚡"
+echo "✅ Done! Restart Termux to enjoy the theme ⚡"
